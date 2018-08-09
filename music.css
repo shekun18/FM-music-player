@@ -1,0 +1,203 @@
+/*初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+span{
+    cursor: pointer;
+}
+/*整体背景*/
+html,body{
+    background: #ddd;
+    height: 100%;
+    font-family: 微软雅黑,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+/*播放器*/
+.wrapper{
+    width: 440px;
+    height: 500px;
+    margin: 0 auto;
+    background: #eee;
+    position: relative;
+    top: 50%;
+    margin-top: -250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px 0 #999;
+}
+
+
+/*上边*/
+.picture{
+    width: 100%;
+    height: 270px;
+    position: relative;
+    text-align: center;
+}
+.picture .music-lyric{
+    width: 100%;
+    height: 230px;
+    padding: 20px 0;
+    background-color: rgba(100,100,100,0.5);
+}
+.picture .music-lyric .lyric-view{
+    height: 230px;
+    overflow: hidden;
+}
+.picture .music-lyric ul{
+    position: relative;
+    transition: all 1s;
+}
+.lyric li{
+    padding: 5px 0 2px 0;
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px ;
+    transition: all 1s;
+}
+.lyric li.active {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+
+/*中间*/
+.content{
+    height: 100px;
+    width: 400px;
+    padding: 20px 20px 10px 20px ;
+}
+/*中间左边*/
+.content .music-massage{
+    display: inline-block;
+    width: 280px;
+    height: 100%;
+}
+.content .music-massage p{
+    cursor: default;
+}
+.content .music-massage .music-name{
+    font-weight: 700;
+    font-size: 26px;
+    color: #455569;
+    white-space:nowrap;/*????*/
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.content .music-massage .music-author{
+    font-weight: 700;
+    font-size: 18px;
+    color: #455569;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.content .music-massage .music-type{
+    font-size: 14px;
+    color: #455569;
+    margin-top: 4px;
+}
+/*中间右边*/
+.content .music-icon{
+    float: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.content .music-icon a,
+.content .music-icon span{
+    margin-left: 10px;
+    font-size: 22px;
+}
+span.colored,a.colored{color: #cdd2d7}
+span.stared{color: #feec98}
+span.loved{color: #fe8698}
+.content .music-icon span:hover,
+.content .music-icon a:hover {
+    text-shadow: 1px 1px 1px #ccc;
+}
+/*进度条*/
+.basebar{
+    display: block;
+    border: none;
+    width: 400px;
+    height: 4px;
+    margin: 0 auto 10px ;
+    border-radius: 2px;
+    background-color: #cdd2d7;
+    position: relative;
+}
+.basebar .progressbar{
+    display: block;
+    border: none;
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #414141;
+}
+
+
+/*下面部分 控制区*/
+.controls{
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.controls .play-control,.music-control{
+    display: inline-block;
+}
+.controls .play-control .btn1{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    background: #414141;
+    color: #d9d9d9;
+    font-size: 20px;
+    text-align: center;
+    line-height: 38px;
+}
+.controls .play-control .btn2,.btn3{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background: #414141;
+    color: #d9d9d9;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+}
+.controls .music-control{
+    float: right;
+    line-height: 38px;
+}
+.controls .music-control span{
+    margin-left: 10px;
+    font-size: 22px;
+}
+.controls .music-control span:hover{
+    text-shadow: 1px 1px 1px #ccc;
+}
+.controls .music-control span.lyriced{color: #414141}
+.controls .music-control span.recycleed{color: #41414}
+
+
+
+
+
+
+
+
+
+

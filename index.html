@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 解除百度的访问限制 -->
+    <meta name="referrer" content="no-referrer">
+    <link rel="stylesheet" type="text/css" href="music.css">
+    <!-- 阿里矢量图 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1467430166_4040916.css">
+    <script src="http://o7m41tvmg.bkt.clouddn.com/jquery-1.12.4.min.js"></script>
+    <title>Music Random</title>
+</head>
+<body>
+   <div class="wrapper">
+       <!--音乐背景-->
+       <div class="picture">
+           <div class="music-lyric" style="display:block">
+               <div class="lyric-view">
+                   <ul class="lyric"></ul>
+               </div>
+           </div>
+       </div>
+       <!--歌曲信息和分享、收藏、点赞-->
+       <div class="content">
+           <audio src=""></audio>
+           <!--信息-->
+           <div class="music-massage">
+               <p class="music-name" title=""></p>
+               <p class="music-author" title=""></p>
+               <p class="music-type" title="" data-id=""></p>
+           </div>
+           <!--分享、收藏、点赞-->
+           <div class="music-icon">
+               <a class="m-icon m-fenxiang colored" href="http://service.weibo.com/share/share.php?title=#_loginLayer_1466697157538" target="new"></a>
+               <span class="m-icon m-star colored"></span>
+               <span class="m-icon m-heart colored"></span>
+           </div>
+       </div>
+       <!--进度条-->
+       <span class="basebar">
+           <span class="progressbar"></span>
+       </span>
+       <!--音乐控制区域 -->
+       <div class="controls">
+           <!--左边按钮：音乐播放、换频道、下一首-->
+           <div class="play-control">
+               <span class="m-icon m-play btn1" title="播放/暂停"></span>
+               <div class="m-icon m-change btn2" title="换频道"></div>
+               <div class="m-icon m-next btn3" title="换歌"></div>
+           </div>
+           <!--右边按钮：循环播放、显示歌词-->
+           <div class="music-control">
+               <span class="m-icon m-xunhuan colored"></span>
+               <span class="m-icon m-lyric colored lyriced"></span>
+           </div>
+       </div>
+   </div>
+   <script src="music.js"></script> 
+</body>
+</html>
